@@ -27,6 +27,12 @@ The logic used when resolving the URL to controller classes is as follows:
      - check for 'foo' DI alias
      - Foo\Controller\BarController::bazAction()
 
+Installation
+------------
+Currently, in order to override the `default` route in the config, this module
+must be enabled **AFTER** your `Application` module in
+`configs/application.config.php`.
+
 Limitations
 -----------
 
