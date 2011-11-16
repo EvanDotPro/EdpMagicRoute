@@ -14,7 +14,7 @@ class Module
     {
         $events = StaticEventManager::getInstance();
         $events->attach('Zend\Mvc\Application', 'route', array($this, 'detectRouteLogic'), -100);
-        $events->attach('Zend\Mvc\Application', 'dispatch', array($this, 'adjustRouteMatchForView'), -10);
+        $events->attach('Zend\Mvc\Application', 'dispatch', array($this, 'adjustRouteMatchForView'), 10);
     }
 
     public function getConfig()
